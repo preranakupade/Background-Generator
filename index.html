@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Background Generator</h1>
+    <div class="controls">
+        <input type="color" id="color1" value="#ff0000">
+        <input type="color" id="color2" value="#0000ff">
+        <select id="gradientType">
+            <option value="linear">Linear</option>
+            <option value="radial">Radial</option>
+        </select>
+        <div class="direction" id="directionControls">
+            <label for="direction">Direction:</label>
+            <select id="direction">
+                <option value="to right">Right</option>
+                <option value="to left">Left</option>
+                <option value="to bottom">Bottom</option>
+                <option value="to top">Top</option>
+                <option value="135deg">Diagonal</option>
+            </select>
+        </div>
+        <button onclick="setBackground()">Apply</button>
+        <button onclick="toggleAnimation()">Toggle Animation</button>
+        <button onclick="randomizeColors()">Random Colors</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
